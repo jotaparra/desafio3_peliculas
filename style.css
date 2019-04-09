@@ -1,0 +1,44 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#body{  /* dentro va nuestro acordeón */
+    width: 600px;
+    min-height: 50px;
+    background-color: red;
+}
+
+.subapartado{   /*aqui va el título*/
+    width: 600px;
+    min-height: 50px;
+    background-color: aqua;
+}
+
+.titulo{
+    width: 600px;
+    height: 50px;
+    background-color: brown;
+    overflow: hidden;
+}
+
+.parrafo{
+    margin: 13px;
+    color: white;
+}
+.info-box{
+    width: 600px;
+    height: 0px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    -webkit-transition: 0.2s;
+}
+.info{
+    margin: 20px;
+    text-align: center;
+    color: black;
+}
+
+.subapartado:hover .info-box{  /* al hacer hover sobre subapartado, aparecerá info-box */
+height: 180px; 
+}
