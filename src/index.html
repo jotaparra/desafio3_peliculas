@@ -6,53 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="body">
-        <div class="subapartado">
-            <div class="titulo">
-                <p class="parrafo">
-                    Spider man
-                </p>
-            </div>
-            <div class="info-box">
-                <p class="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere quae dolor recusandae sed natus quaerat exercitationem dignissimos esse libero!
-                </p>
-            </div>
 
-        </div>
-
-        <div class="subapartado">
-                <div class="titulo">
-                    <p class="parrafo">
-                        Spider man
-                    </p>
-                </div>
-                <div class="info-box">
-                    <p class="info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere quae dolor recusandae sed natus quaerat exercitationem dignissimos esse libero!
-                    </p>
-                </div>
-    
-            </div>
-
-            <div class="subapartado">
-                    <div class="titulo">
-                        <p class="parrafo">
+    <div class="container">
+        <div class="row">
+            <div class="subapartado col-8 offset-3">
+                <div class="titulo col-12">
+                    <div class="row align-items-center">
+                        <div class="col-2 mt-1">
+                            <div class="circular">
+                                <img src="./img/poster.jpg" alt="miniatura poster película">
+                            </div>
+                        </div>
+                        <p class="parrafo pt-2">
                             Spider man
                         </p>
                     </div>
-                    <div class="info-box">
-                        <p class="info">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere quae dolor recusandae sed natus quaerat exercitationem dignissimos esse libero!
-                        </p>
-                    </div>
-        
                 </div>
+                <div class="info-box col-12">
+                    <div class="row">
+                        <div class="col-3">
+                            <img class="poster" src="./img/poster.jpg"
+                                alt="" srcset="">
+                        </div>
+                        <div class="col-9">
+                            <div class="info">
+                                <p>ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere quae dolor
+                                recusandae sed natus quaerat exercitationem dignissimos esse libero!
+                            </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
+
 
     <script src="app.js"></script>
 </body>
