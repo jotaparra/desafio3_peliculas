@@ -3,16 +3,6 @@
     padding:0px;
 }
 
-
-/* #body{ 
-    width: 600px;
-    min-height: 50px;
-    background-color: red;
-    overflow: hidden;
-    border-radius: 5px;
-    margin:6px;
-} */
-
 body{
     position: absolute;
     width:100%;
@@ -28,26 +18,42 @@ h1{
     padding: 10px;
 }
 
-.principal-box{   /*aqui va el título*/
-    min-height: 60px;
+.principal-box{   /* caja individual para cada película */
+    min-height: 80px;
+}
+.principal-box:hover .info-box{  /* al hacer hover sobre el div principal, aparecerá info-box */
+    height: 180px; 
 }
 
-.titulo{
-    height: 60px;
+.titulo{  /* estilos para el div con la miniatura y el titulo */
+    height: 80px;
     background-color:rgb(44, 43, 38);
     opacity: 0.9;
     overflow: hidden;
-   /* s */
-}
-#root{
-    color: aliceblue;
-    height: 60px;
 }
 
-.parrafo{
+.circle {   /* estilo para redondear el div contenedor de la miniatura */
+    display: inline-block;
+    position: relative;
+    width: 75px;
+    height: 75px;
+    padding: 0px;
+    margin-top: 2px;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border-radius: 50%;
+}
+
+.circle img{
+    height: auto;
+    width: 100%;
+}
+
+.movie-title{
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     margin: 0;
     line-height: 0em;
 }
@@ -57,9 +63,7 @@ h1{
     overflow: hidden;
     -webkit-transition: 0.2s;
 }
-.principal-box:hover .info-box{  /* al hacer hover sobre subapartado, aparecerá info-box */
-    height: 180px; 
-}
+
 
 .info{
     padding: 10px 20px;
@@ -70,28 +74,6 @@ h1{
     font-weight: bold;
 }
 
-.col-miniatura{
-    padding-right: 0px;
-    padding-left: 0px;
-}
-.circle {
-    display: inline-block;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    border-radius: 50%;
-}
-
-.circle img{
-    height: auto;
-    width: 100%;
-    margin-left: -50px;
-}
-
-
 .poster{
     padding-top: 20px;
     height: 160px;
@@ -100,3 +82,13 @@ h1{
 /* *, ::after, ::before {
     box-sizing: content-box;
 } */
+
+@media (min-width: 768px) {
+    .movie-title{
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        margin: 0;
+        line-height: 0em;
+    }
+}
