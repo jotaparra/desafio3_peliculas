@@ -8,15 +8,15 @@ function classicMovie () {movies.map(function(item) {
       .then(data => {
         document.getElementById('root').innerHTML+=
       `<div class="row">
-      <div class="subapartado col-8 offset-2">
+      <div class="principal-box col-8 offset-2">
           <div class="titulo col-12">
               <div class="row align-items-center">
-                  <div class="col-2 col-miniatura">
-                      <div class="circular">
+                  <div class="col-3 col-miniatura">
+                      <div class="circle">
                           <img src=${data.Poster} alt="miniatura poster película">
                       </div>
                   </div>
-                  <div class="col-10">
+                  <div class="col-9">
                       <p class="parrafo pl-2">
                           ${data.Title}
                       </p>
@@ -44,4 +44,5 @@ function classicMovie () {movies.map(function(item) {
       
   })
   };
+
   classicMovie(); 

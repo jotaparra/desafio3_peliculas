@@ -21,16 +21,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-body::after {
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.4);
-    z-index:-1;
-  }
 
 h1{
     color: #F9F9F9;
@@ -38,7 +28,7 @@ h1{
     padding: 10px;
 }
 
-.subapartado{   /*aqui va el título*/
+.principal-box{   /*aqui va el título*/
     min-height: 60px;
 }
 
@@ -67,7 +57,7 @@ h1{
     overflow: hidden;
     -webkit-transition: 0.2s;
 }
-.subapartado:hover .info-box{  /* al hacer hover sobre subapartado, aparecerá info-box */
+.principal-box:hover .info-box{  /* al hacer hover sobre subapartado, aparecerá info-box */
     height: 180px; 
 }
 
@@ -84,22 +74,21 @@ h1{
     padding-right: 0px;
     padding-left: 0px;
 }
-.circular {
+.circle {
     display: inline-block;
     position: relative;
     width: 100px;
-    height: 70px;
-    padding: 0px;
-    margin: 0px;
+    height: 100px;
     overflow: hidden;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    border-radius: 50%;
 }
 
-.circular img{
+.circle img{
     height: auto;
     width: 100%;
-
+    margin-left: -50px;
 }
 
 
