@@ -7,7 +7,7 @@ body{
     position: absolute;
     width:100%;
     min-height: 100hv;
-    background: url(../src/img/366153.jpg) no-repeat;
+    background: url(img/366153.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
