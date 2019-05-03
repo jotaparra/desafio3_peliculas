@@ -1,5 +1,5 @@
 # CINEMA
-![screenshot](img/cinema_demo.png)
+![Alt text](img/cinema_demo.png)
 
 ### Definición
 
