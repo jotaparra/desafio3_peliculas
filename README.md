@@ -1,5 +1,5 @@
 # CINEMA
-![](img/cinema_demo.png)
+![](cinema_demo.png)
 
 ### Definición
 
