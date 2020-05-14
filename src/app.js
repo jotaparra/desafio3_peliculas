@@ -1,7 +1,7 @@
 const movies =['psycho', 'Citizen%20Kane', 'Gone%20with%20the%20Wind', 'casablanca', 'rebecca', 'La%20grande%20illusion', 'Modern%20Times', 'Singin%27%20in%20the%20Rain', 'metropolis', 'Forbidden%20Planet','2001:A%20Space%20Odyssey', 'seven%20samurai', 'Vertigo', 'Some%20Like%20It%20Hot','Rebel%20Without%20a%20Cause','ordet', 'm'];
 
 function classicMovie () {movies.map(function(item) {
-    fetch('http://www.omdbapi.com/?apikey=5688f11a&t='+ item)
+    fetch('http://www.omdbapi.com/?i=tt3896198&apikey=fa6d792c'+ item)
       .then(res => res.json())
       .then(data => {
         document.getElementById('root').innerHTML+=
